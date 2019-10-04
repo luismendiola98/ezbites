@@ -5,16 +5,19 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ezbites.MainPage"
-             Title="">
+             Title=""
+             BackgroundColor="DarkSlateBlue">
 
     <StackLayout Margin="0,20,0,20">
         <!-- Welcome Label -->
         <Label Text="Welcome to EZbites!"
                TextColor="Black"
                HorizontalOptions="Center"
+
                FontSize="Title"/>
         <!--Get Started Button-->
         <Button Text="Get Started"
+                TextColor="White"
                 VerticalOptions="EndAndExpand"
                 Clicked="GetStartedButton_Clicked"/>
     </StackLayout>

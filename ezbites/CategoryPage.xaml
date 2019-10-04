@@ -7,13 +7,20 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="home"
                      Text="home"
-                     Icon="home.png"
+                     IconImageSource="home.png"
                      Priority="0"
                      Clicked="HomeToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <!--List of Recipe Categories-->
-    <ListView x:Name="RecipeView">
+    <ScrollView x:Name="RecipeView">
+        <StackLayout>
+        <Button Text="Mexican"
+                Clicked="MexicanButton_Clicked"/>
+        <Button Text="Appetizers"
+                Clicked="AppetizersButton_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 
-    </ListView>
+  
    
 </ContentPage>

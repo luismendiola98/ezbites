@@ -18,6 +18,13 @@ namespace ezbites
         {
             Navigation.PushAsync(new MainPage());
         }
-
+        void MexicanButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RecipeListPage());
+        }
+        void AppetizersButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RecipeListPage());
+        }
     }
 }
