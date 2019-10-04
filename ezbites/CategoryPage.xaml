@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ezbites.CategoryPage"
+             Title="Select Categories">
+    <!--Home button added to toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="home"
+                     Text="home"
+                     Icon="home.png"
+                     Priority="0"
+                     Clicked="HomeToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <!--List of Recipe Categories-->
+    <ListView x:Name="RecipeView">
+
+    </ListView>
+   
+</ContentPage>
