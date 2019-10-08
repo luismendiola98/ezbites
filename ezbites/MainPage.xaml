@@ -10,8 +10,8 @@
 
     <StackLayout Margin="0,20,0,20">
         <!-- Welcome Label -->
-        <Label Text="Welcome to EZbites!"
-               TextColor="Black"
+        <Label Text="Welcome to EZBites!"
+               TextColor= "Yellow"
                HorizontalOptions="Center"
 
                FontSize="Title"/>

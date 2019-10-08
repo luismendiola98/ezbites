@@ -26,5 +26,9 @@ namespace ezbites
         {
             Navigation.PushAsync(new RecipeListPage());
         }
+        void JapaneseButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RecipeListPage());
+        }
     }
 }

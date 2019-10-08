@@ -18,6 +18,8 @@
                 Clicked="MexicanButton_Clicked"/>
         <Button Text="Appetizers"
                 Clicked="AppetizersButton_Clicked"/>
+        <Button Text="Japanese"
+                Clicked="JapaneseButton_Clicked"/>
         </StackLayout>
     </ScrollView>
 
