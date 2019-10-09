@@ -14,7 +14,11 @@
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontSize="Title"/>
-
+    <StackLayout Margin="0,20,0,20">
+        <!-- Welcome Label -->
+        <Label Text="Welcome to EZBites!"
+               TextColor= "Yellow"
+               HorizontalOptions="Center"
 
             <!--Instructions Label-->
             <Label Margin = "10,30,10,0"

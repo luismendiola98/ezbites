@@ -34,6 +34,7 @@ namespace ezbites
         {
             recipeCategory = e.SelectedItem as string;
         }
+
         // handle next page button
         void NextButton_Clicked(object sender, EventArgs e)
         {
@@ -125,8 +126,6 @@ namespace ezbites
                 }*/
             };
 
-
         }
-
     }
 }
