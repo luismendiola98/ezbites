@@ -2,25 +2,53 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ezbites.CategoryPage"
-             Title="Select Categories">
+             Title="Category List"
+             BackgroundColor="DarkSlateBlue">
+
     <!--Home button added to toolbar-->
     <ContentPage.ToolbarItems>
-        <ToolbarItem Name="home"
-                     Text="home"
+        <ToolbarItem x:Name = "home"
+                     Text = "home"
                      IconImageSource="home.png"
                      Priority="0"
                      Clicked="HomeToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
-    <!--List of Recipe Categories-->
-    <ScrollView x:Name="RecipeView">
-        <StackLayout>
-        <Button Text="Mexican"
-                Clicked="MexicanButton_Clicked"/>
-        <Button Text="Appetizers"
-                Clicked="AppetizersButton_Clicked"/>
-        </StackLayout>
-    </ScrollView>
 
+    <!--ListView of Recipe Categories-->
+    <StackLayout BackgroundColor="DarkSlateBlue">
+        <ScrollView>
+            <ListView x:Name="categoryListView"
+                        BackgroundColor="DarkSlateBlue"
+                        HorizontalOptions="CenterAndExpand"
+                        IsGroupingEnabled="True"
+                        GroupDisplayBinding="{Binding Title}"
+                      
+                        GroupShortNameBinding="{Binding ShortTitle}"
+                        ItemSelected="Handle_CategorySelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            <!-- Group Header Customization-->
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <StackLayout BackgroundColor="DarkSlateBlue">
+                    </StackLayout>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <!-- End Group Header Customization -->
+            </ListView>
+        </ScrollView>
+
+        <!--Get Next Button
+        <Button Margin="0,0,20,20"
+                Text="Get Started >"
+                TextColor="Black"
+                FontSize="Subtitle"
+                HorizontalOptions="End"
+                VerticalOptions="EndAndExpand"
+                Clicked="NextButton_Clicked"/>-->
+    </StackLayout>
   
-   
 </ContentPage>

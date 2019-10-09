@@ -1,6 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ezbites.RecipeListPage">
-    <ContentPage.Content>
-  
-    </ContentPage.Content>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ezbites.RecipeListPage"
+    Title="Recipe List"
+    BackgroundColor="DarkSlateBlue">
+    <!--Home button added to toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name = "home"
+                     Text = "home"
+                     IconImageSource="home.png"
+                     Priority="0"
+                     Clicked="HomeToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <!--ListView of Recipes-->
+    <ListView x:Name="recipeListView"
+              BackgroundColor="DarkSlateBlue">
+
+
+    </ListView>
 </ContentPage>
