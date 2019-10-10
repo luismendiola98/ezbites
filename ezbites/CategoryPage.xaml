@@ -22,7 +22,6 @@
                         HorizontalOptions="CenterAndExpand"
                         IsGroupingEnabled="True"
                         GroupDisplayBinding="{Binding Title}"
-                      
                         GroupShortNameBinding="{Binding ShortTitle}"
                         ItemSelected="Handle_CategorySelected">
                 <ListView.ItemTemplate>
@@ -30,14 +29,14 @@
                         <TextCell Text="{Binding Name}"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            <!-- Group Header Customization-->
+            <!-- Group Header Customization
             <ListView.GroupHeaderTemplate>
                 <DataTemplate>
                     <StackLayout BackgroundColor="DarkSlateBlue">
                     </StackLayout>
                 </DataTemplate>
             </ListView.GroupHeaderTemplate>
-            <!-- End Group Header Customization -->
+            < End Group Header Customization-->
             </ListView>
         </ScrollView>
 

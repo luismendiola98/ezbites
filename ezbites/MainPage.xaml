@@ -6,54 +6,49 @@
              x:Class="ezbites.MainPage"
              BackgroundColor="DarkSlateBlue">
     <ScrollView>
-        <StackLayout>
+        <StackLayout Margin="0,20,0,20">
             <!-- Welcome Label -->
             <Label Margin = "0,10,0,0"
                    Text="Welcome to EZbites!"
-                   TextColor="Black"
+                   TextColor="Yellow"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"
                    FontSize="Title"/>
-    <StackLayout Margin="0,20,0,20">
-        <!-- Welcome Label -->
-        <Label Text="Welcome to EZBites!"
-               TextColor= "Yellow"
-               HorizontalOptions="Center"
 
-            <!--Instructions Label-->
-            <Label Margin = "10,30,10,0"
-                   Text="Select the type of food categeries your feeling and click next."
-                   TextColor="Black"
-                   FontSize="Subtitle"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"/>
-            <Label Text = "It's that EZ!"
-                   TextColor="Black"
-                   FontSize="Subtitle"
-                   VerticalOptions="Center"
-                   HorizontalTextAlignment="Center"/>
+                <!--Instructions Label-->
+                <Label Margin = "10,30,10,0"
+                       Text="Select the type of food categeries your feeling and click next."
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Label Text = "It's that EZ!"
+                       TextColor="Black"
+                       FontSize="Subtitle"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
         
-             <Image x:Name="homeImage" Aspect="AspectFit"
-                    WidthRequest="100"
-                    HeightRequest="100"
-                    Source =
-                    "{markupextensions:EmbeddedImage ezbites.Images.homelogo@3x.png}"
-                    VerticalOptions="CenterAndExpand"
-                    HorizontalOptions="Center"/>
+                 <Image x:Name="homeImage" Aspect="AspectFit"
+                        WidthRequest="100"
+                        HeightRequest="100"
+                        Source =
+                        "{markupextensions:EmbeddedImage ezbites.Images.homelogo@3x.png}"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="Center"/>
 
-            <!--<Button ImageSource="homelogo.png"
-                    BackgroundColor="DarkSlateBlue"
-                    VerticalOptions="CenterAndExpand"
-                    Clicked="HomeLogoButton_Clicked"/>-->
+                <!--<Button ImageSource="homelogo.png"
+                        BackgroundColor="DarkSlateBlue"
+                        VerticalOptions="CenterAndExpand"
+                        Clicked="HomeLogoButton_Clicked"/>-->
 
-            <!--Get Started Button-->
-            <Button Margin="0,0,20,20"
-                    Text="Get Started >"
-                    TextColor="Black"
-                    FontSize="Subtitle"
-                    HorizontalOptions="End"
-                    VerticalOptions="EndAndExpand"
-                    Clicked="GetStartedButton_Clicked"/>
+                <!--Get Started Button-->
+                <Button Margin="0,0,20,20"
+                        Text="Get Started >"
+                        TextColor="Black"
+                        FontSize="Subtitle"
+                        HorizontalOptions="End"
+                        VerticalOptions="EndAndExpand"
+                        Clicked="GetStartedButton_Clicked"/>
         </StackLayout>
     </ScrollView>
 </ContentPage>

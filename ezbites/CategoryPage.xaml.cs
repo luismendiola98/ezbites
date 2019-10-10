@@ -34,7 +34,7 @@ namespace ezbites
         {
             recipeCategory = e.SelectedItem as string;
         }
-
+        /*
         // handle next page button
         void NextButton_Clicked(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace ezbites
                 Navigation.PushAsync(new RecipeListPage(recipeCategory));
             else
                 DisplayAlert("Error", "Please select a category", "OK");
-        }
+        }*/
 
         public CategoryPage()
         {
