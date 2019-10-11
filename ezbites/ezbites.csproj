@@ -15,6 +15,7 @@
     <Folder Include="Images\" />
     <Folder Include="MarkupExtensions\" />
     <Folder Include="Models\" />
+    <Folder Include="FoodPrepAPI\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Images\plate-fork-and-knife.png" />
