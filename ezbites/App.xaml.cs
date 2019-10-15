@@ -8,7 +8,12 @@ namespace ezbites
         {
             InitializeComponent();
             //main page is set to a navigation page to navigate between pages
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.DarkSlateBlue,
+                BarTextColor = Color.Black
+            };
+
         }
 
         protected override void OnStart()

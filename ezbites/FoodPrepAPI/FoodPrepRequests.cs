@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 using ezbites.Models;
 
@@ -14,7 +12,6 @@ namespace ezbites.FoodPrepAPI
         {
             BaseURL = baseURL;
         }
-
 
         public List<CategoryView> GetCategories()
         {

@@ -14,9 +14,21 @@
                      Clicked="HomeToolbarItem_Clicked"/>
     </ContentPage.ToolbarItems>
     <!--ListView of Recipes-->
-    <ListView x:Name="recipeListView"
-              BackgroundColor="DarkSlateBlue">
-
-
-    </ListView>
+    <StackLayout BackgroundColor="DarkSlateBlue">
+        <ScrollView>
+            <ListView x:Name="recipeListView"
+                      BackgroundColor="DarkSlateBlue"
+                      HorizontalOptions="CenterAndExpand"
+                      HasUnevenRows="True"
+                      ItemSelected="Handle_RecipeSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}"
+                                  Detail="{Binding Info}"
+                                  DetailColor="Black" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

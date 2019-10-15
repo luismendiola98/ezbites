@@ -18,36 +18,17 @@
     <StackLayout BackgroundColor="DarkSlateBlue">
         <ScrollView>
             <ListView x:Name="categoryListView"
-                        BackgroundColor="DarkSlateBlue"
-                        HorizontalOptions="CenterAndExpand"
-                        IsGroupingEnabled="True"
-                        GroupDisplayBinding="{Binding Title}"
-                        GroupShortNameBinding="{Binding ShortTitle}"
-                        ItemSelected="Handle_CategorySelected">
+                      BackgroundColor="DarkSlateBlue"
+                      HorizontalOptions="CenterAndExpand"
+                      ItemSelected="Handle_CategorySelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Name}"/>
+                        <TextCell Text="{Binding Name}"
+                                  DetailColor="Black" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            <!-- Group Header Customization
-            <ListView.GroupHeaderTemplate>
-                <DataTemplate>
-                    <StackLayout BackgroundColor="DarkSlateBlue">
-                    </StackLayout>
-                </DataTemplate>
-            </ListView.GroupHeaderTemplate>
-            < End Group Header Customization-->
             </ListView>
         </ScrollView>
-
-        <!--Get Next Button
-        <Button Margin="0,0,20,20"
-                Text="Get Started >"
-                TextColor="Black"
-                FontSize="Subtitle"
-                HorizontalOptions="End"
-                VerticalOptions="EndAndExpand"
-                Clicked="NextButton_Clicked"/>-->
     </StackLayout>
   
 </ContentPage>

@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace ezbites.Models
+﻿namespace ezbites.Models
 {
     public class CategoryView
     {
+        //CategoryID range 6-25
         public int CategoryID { get; set; }
         public string Name { get; set; }
 
-        public CategoryView()
-        {
-
-        }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ezbites.Models
 {
@@ -12,11 +10,6 @@ namespace ezbites.Models
         public string RecipeSteps { get; set; }
         public List<Ingredient> Ingredients { get; set; }
         public List<CategoryView> Categories { get; set; }
-
-        public RecipeFullView()
-        {
-
-        }
 
     }
 }
