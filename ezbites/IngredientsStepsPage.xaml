@@ -16,10 +16,11 @@
 
     <!--Ingredients and Steps-->
     <ScrollView>
-        <StackLayout BackgroundColor="DarkSlateBlue">
+        <StackLayout BackgroundColor="DarkSlateBlue" HorizontalOptions="Center">
             <Label Text="{Binding Name}"
                    TextColor="LightPink"
                    FontSize="Title"/>
+<<<<<<< Updated upstream
             <Label Text="{Binding Info}"
                    TextColor="FloralWhite"
                    FontSize="Subtitle"/>
@@ -42,6 +43,13 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
+=======
+
+            <Label Text="Steps"
+                   TextColor="Black"
+                   FontSize="Subtitle"/>
+
+>>>>>>> Stashed changes
             <Label Text="{Binding RecipeSteps}"
                    TextColor="GhostWhite"/>
 
