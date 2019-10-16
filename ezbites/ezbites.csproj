@@ -20,10 +20,12 @@
   <ItemGroup>
     <None Remove="Images\plate-fork-and-knife.png" />
     <None Remove="Images\homelogo.png" />
-    <None Remove="Images\homelogo%403x.png" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\EZ-BITES Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\homelogo.png" />
-    <EmbeddedResource Include="Images\homelogo%403x.png" />
+    <EmbeddedResource Include="Images\logo.png" />
+    <EmbeddedResource Include="Images\EZ-BITES Logo.png" />
   </ItemGroup>
 </Project>

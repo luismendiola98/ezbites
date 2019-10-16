@@ -18,8 +18,12 @@
     <ScrollView>
         <StackLayout BackgroundColor="DarkSlateBlue">
             <Label Text="{Binding Name}"
-                   TextColor="Black"
+                   TextColor="LightPink"
                    FontSize="Title"/>
+            <Label Text="{Binding Info}"
+                   TextColor="FloralWhite"
+                   FontSize="Subtitle"/>
+       
        
              <!-- <Label Text="Ingredients"
                    TextColor="Black"
@@ -38,12 +42,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
-
-            <Label Text="Steps"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
             <Label Text="{Binding RecipeSteps}"
-                   TextColor="Black"/>
+                   TextColor="GhostWhite"/>
 
         </StackLayout>
     </ScrollView>
