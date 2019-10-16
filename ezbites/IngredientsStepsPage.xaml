@@ -20,36 +20,11 @@
             <Label Text="{Binding Name}"
                    TextColor="LightPink"
                    FontSize="Title"/>
-<<<<<<< Updated upstream
+
             <Label Text="{Binding Info}"
                    TextColor="FloralWhite"
                    FontSize="Subtitle"/>
        
-       
-             <!-- <Label Text="Ingredients"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
-
-            <ListView x:Name="ingredientListView"
-                      BackgroundColor="DarkSlateBlue"
-                      HorizontalOptions="CenterAndExpand"
-                      HasUnevenRows="True"
-                      SeparatorVisibility="None"
-                      SelectionMode="None">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextCell Text="{Binding Ingredients}"
-                                  DetailColor="Black" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
-=======
-
-            <Label Text="Steps"
-                   TextColor="Black"
-                   FontSize="Subtitle"/>
-
->>>>>>> Stashed changes
             <Label Text="{Binding RecipeSteps}"
                    TextColor="GhostWhite"/>
 
