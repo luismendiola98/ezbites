@@ -15,7 +15,6 @@ namespace ezbites
             //get list of all categories
             var api = new FoodPrepRequests("https://foodprepapi.azurewebsites.net/api");
             categoryListView.ItemsSource = api.GetCategories();
-
         }
 
         //handle clicked event for home button

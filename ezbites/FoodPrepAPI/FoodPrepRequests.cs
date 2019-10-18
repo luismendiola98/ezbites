@@ -2,7 +2,6 @@
 using Newtonsoft.Json;
 using ezbites.Models;
 
-
 namespace ezbites.FoodPrepAPI
 {
     public class FoodPrepRequests
@@ -20,6 +19,7 @@ namespace ezbites.FoodPrepAPI
 
             string res = api.GET($"{BaseURL}/{resource}");
             var Categories = JsonConvert.DeserializeObject<List<CategoryView>>(res);
+
             return Categories;
         }
 
@@ -40,9 +40,9 @@ namespace ezbites.FoodPrepAPI
             string resource = $"RecipeSimple/{categoryID}";
 
             string res = api.GET($"{BaseURL}/{resource}");
+          
             var recipes = JsonConvert.DeserializeObject<List<RecipeSimpleView>>(res);
             return recipes;
-
         }
 
         public List<RecipeSimpleView> PostForRecipes(List<int> categoryIDs)

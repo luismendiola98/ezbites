@@ -13,19 +13,17 @@ namespace ezbites
             InitializeComponent();
 
             var api = new FoodPrepRequests("https://foodprepapi.azurewebsites.net/api");
-            //this.categoryID = categoryID;
+
+            var recipes = api.GetRecipesSimple(categoryID);
+            recipeListView.ItemsSource = recipes;
+
             // if there are no recipes for the categoryID chosen
-            if(api.GetRecipesSimple(categoryID)== null)
-            {
-                DisplayAlert("Error", "No recipes found", "OK");
-            }
-            else
-            {
-                recipeListView.ItemsSource = api.GetRecipesSimple(categoryID);
-            }
-
-
+            if (recipes.Count == 0)
+                {
+                    DisplayAlert("Error", "No Recipes in the Database", "OK");
+                }
         }
+
         // handle recipe selected
         async void Handle_RecipeSelected(object sender, SelectedItemChangedEventArgs e)
         {
